@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM_RegressionPW" thread-count="2" parallel="tests" verbose="4">
+    <listeners>
+        <listener class-name="com.qa.orangeHRM.listners.ExtentReportListner"/>
+    </listeners>
+
+    <test name="Orange HRM Regression Test cases" >
+        <classes>
+            <class name="com.qa.orangeHRM.test.LoginPageTests"/>
+        </classes>
+    </test>
+    <test name="Orange HRM Regression Dash board Test cases">
+        <classes>
+            <class name="com.qa.orangeHRM.test.DashboardPageTests"/>
+        </classes>
+    </test>
+</suite>
