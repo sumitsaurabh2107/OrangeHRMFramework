@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunManager">
+    <configuration name="/Users/vimmy/Documents/GitHub/OrangeHRMFramework/src/test/resources/TestRunners/Regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRMFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/TestRunners/Regression.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/vimmy/Documents/GitHub/OrangeHRMFramework/src/test/resources/TestRunners/Regression.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
