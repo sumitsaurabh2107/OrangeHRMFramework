@@ -59,8 +59,8 @@ jobs:
         # Replace the placeholders with the actual paths to your TestNG jar file, test-classes, and testng.xml
 
   deploy:
-    runs-on: macos-latest
-    needs: Build with maven
+    #runs-on: macos-latest
+    #needs: Build with maven
     steps:
     - name: Deploy to Production
       run: |
