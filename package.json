@@ -1,0 +1,9 @@
+{
+  "name": "OrangeHRMFramework",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {},
+  "dependencies": {
+    "playwright": "^1.41.1"
+  }
+}
