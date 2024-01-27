@@ -42,10 +42,10 @@ jobs:
           npm install
           npm install playwright
 
-      - name: Install JDK
-        run: |
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          echo 'export PATH="/usr/local/opt/openjdk@11/bin:$PATH"' >> $HOME/.zshrc
+      #- name: Install JDK
+        #run: |
+          #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          #echo 'export PATH="/usr/local/opt/openjdk@11/bin:$PATH"' >> $HOME/.zshrc
         # Update this line based on your shell (e.g., .bashrc for Bash)
 
       - name: Install Chrome
