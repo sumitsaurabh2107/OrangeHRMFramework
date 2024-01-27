@@ -60,7 +60,7 @@ jobs:
 
   deploy:
     runs-on: macos-latest
-    needs: build
+    needs: Build with maven
     steps:
     - name: Deploy to Production
       run: |
