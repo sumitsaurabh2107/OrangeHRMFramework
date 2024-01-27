@@ -9,7 +9,7 @@
             <class name="com.qa.orangeHRM.test.LoginPageTests"/>
         </classes>
     </test>
-    <test name="Orange HRM Regression Dash board Test cases">
+        <test name="Orange HRM Regression Dash board Test cases">
         <classes>
             <class name="com.qa.orangeHRM.test.DashboardPageTests"/>
         </classes>

@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: OrangeHRM CI/CD Pipeline
 
 on:
   push:
@@ -6,17 +6,35 @@ on:
       - OrangeHRM_Framework
 
 jobs:
-  build:
-    runs-on: macos-latest
+  analyze:
+    name: OrangeHRM CI/CD Pipeline
+    runs-on: [self-hosted]
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'java']
+        java-version: [ 17 ]
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        ref: 'OrangeHRM_Framework'
+
+    - name: Set up JDK ${{ matrix.java-version }}
+      uses: actions/setup-java@v1
+      with:
+        java-version: ${{ matrix.java-version }}
+
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
 
     - name: Install Dependencies
       run: |
@@ -32,8 +50,8 @@ jobs:
       run: |
         brew install --cask google-chrome
 
-    - name: Build
-      run: npm run build
+    - name: Build with maven
+      run: mvn clean test
 
     - name: Run Tests
       run: |

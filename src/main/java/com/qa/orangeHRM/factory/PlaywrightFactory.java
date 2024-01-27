@@ -13,7 +13,7 @@ public class PlaywrightFactory {
     Browser browser;
     BrowserContext browserContext;
     Page page;
-    Properties prop;
+    private Properties prop;
     private static ThreadLocal<Browser> tlBrowser = new ThreadLocal<>();
     private static ThreadLocal<BrowserContext> tlBrowserContext = new ThreadLocal<>();
     private static ThreadLocal<Page> tlPage = new ThreadLocal<>();
