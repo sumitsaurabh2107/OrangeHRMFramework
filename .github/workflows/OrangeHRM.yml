@@ -55,9 +55,9 @@ jobs:
       - name: Build with Maven
         run: mvn clean test
 
-      - name: Run Tests
-        run: |
-          java -cp /home/vimmy/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/vimmy/Documents/GitHub/OrangeHRMFramework/src/test/java/com/qa/orangeHRM/test:/Users/vimmy/Documents/GitHub/OrangeHRMFramework/src/test/resources/TestRunners/Regression.xml
+      #- name: Run Tests
+       # run: |
+        #  java -cp /home/vimmy/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/vimmy/Documents/GitHub/OrangeHRMFramework/src/test/java/com/qa/orangeHRM/test:/Users/vimmy/Documents/GitHub/OrangeHRMFramework/src/test/resources/TestRunners/Regression.xml
           # Replace the placeholders with the actual paths to your TestNG jar file, test-classes, and testng.xml
 
   deploy:
